@@ -1,0 +1,30 @@
+:root {
+  --ink: #10272e;
+  --ink-soft: #4d6168;
+  --paper: #eef3f4;
+  --panel: #ffffff;
+  --line: #cfdcdf;
+  --caspian: #1f6f78;
+  --caspian-deep: #0e3b43;
+  --nar: #c2314b;
+  --focus: #c2314b;
+
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+
+  font: 17px/1.5 var(--body);
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; }
+h1, h2 { font-family: var(--display); margin: 0; }
+p { margin: 0; }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
